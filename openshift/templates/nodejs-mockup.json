@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "Mockup-App",
+    "name": "mockup-app",
     "annotations": {
       "openshift.io/display-name": "Mockup Node.js",
       "description": "An APP to creates Mockups",
@@ -299,7 +299,7 @@
       "displayName": "Name",
       "description": "The name assigned to all of the frontend objects defined in this template.",
       "required": true,
-      "value": "NodejsMockup"
+      "value": "nodejs-mockup"
     },
     {
       "name": "NAMESPACE",
