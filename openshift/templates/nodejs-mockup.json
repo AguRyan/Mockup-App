@@ -149,7 +149,7 @@
             "imageChangeParams": {
               "automatic": true,
               "containerNames": [
-                "nodejs-mongo-persistent"
+                "${NAME}"
               ],
               "from": {
                 "kind": "ImageStreamTag",
@@ -175,7 +175,7 @@
           "spec": {
             "containers": [
               {
-                "name": "nodejs-mockup",
+                "name": "${NAME}",
                 "image": " ",
                 "ports": [
                   {
@@ -249,7 +249,7 @@
                     "value": "${DELETE_BODY_RESPONSE_500}"
                   },
 				  {
-                    "name": "POST__BODY_RESPONSE_OK",
+                    "name": "POST_BODY_RESPONSE_OK",
                     "value": "${POST_BODY_RESPONSE_OK}"
                   },
 				  {
