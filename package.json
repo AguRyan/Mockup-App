@@ -1,0 +1,33 @@
+{
+  "name": "Mockup-App",
+  "version": "1.0.0",
+  "description": "API for Mockups",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dgram": "^1.0.1",
+    "express": "^4.16.4",
+    "express-basic-auth": "^1.1.6",
+    "gelf-pro": "^1.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.16",
+    "net": "^1.0.2",
+    "package.json": "^2.0.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ARyan/Mockup-App.git"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose"
+  ],
+  "author": "Agustin Ryan <GARyan@teco.com.ar>",
+  "license": "UNLICENSED"
+}
