@@ -347,83 +347,103 @@
     },
     {
       "name": "POST_API_PATH",
-      "displayName": "PATH for a POST method"
+      "displayName": "PATH POST",
+      "description": "The Path for a POST method"
     },
     {
       "name": "POST_REQUIRED_KEYS",
-      "displayName": "Required Keys in a body for a POST method (comma separated)"
+      "displayName": "POST Required Keys",
+      "description": "Required Keys in a body for a POST method (comma separated)"
     },
 	{
       "name": "POST_KEY_RESPONSE_500",
-      "displayName": "A Key to simulate a 500 error in a POST method (key=value)"
+      "displayName": "POST Key Error response",
+      "description": "A Key and the value to simulate a 500 error in a POST method (key=value)"
     },
 	{
       "name": "POST_BODY_RESPONSE_500",
-      "displayName": "Body for response the 500 error (JSON)"
+      "displayName": "POST body error response",
+      "description": "Body for response the 500 error (JSON)"
     },
 	{
       "name": "POST_BODY_RESPONSE_OK",
-      "displayName": "Body for response OK (JSON)"
+      "displayName": "POST Body response",
+      "description": "Body for response OK (JSON)"
     },
 	{
       "name": "GET_API_PATH",
-      "displayName": "PATH for a GET method"
+      "displayName": "PATH GET",
+      "description": "The Path for a GET method"
     },
-	{
+    {
       "name": "GET_REQUIRED_KEYS",
-      "displayName": "Required Keys in a body for a GET method (comma separated)"
+      "displayName": "GET Required Keys",
+      "description": "Required Keys in a body for a GET method (comma separated)"
     },
 	{
       "name": "GET_KEY_RESPONSE_500",
-      "displayName": "A Key to simulate a 500 error in a GET method (key=value)"
+      "displayName": "GET Key Error response",
+      "description": "A Key and the value to simulate a 500 error in a GET method (key=value)"
     },
 	{
       "name": "GET_BODY_RESPONSE_500",
-      "displayName": "Body for response the 500 error (JSON)"
+      "displayName": "GET body error response",
+      "description": "Body for response the 500 error (JSON)"
     },
 	{
       "name": "GET_BODY_RESPONSE_OK",
-      "displayName": "Body for response OK (JSON)"
+      "displayName": "GET Body response",
+      "description": "Body for response OK (JSON)"
     },
     {
       "name": "PUT_API_PATH",
-      "displayName": "PATH for a PUT method"
+      "displayName": "PATH PUT",
+      "description": "The Path for a PUT method"
     },
-	{
+    {
       "name": "PUT_REQUIRED_KEYS",
-      "displayName": "Required Keys in a body for a PUT method (comma separated)"
+      "displayName": "PUT Required Keys",
+      "description": "Required Keys in a body for a PUT method (comma separated)"
     },
 	{
       "name": "PUT_KEY_RESPONSE_500",
-      "displayName": "A Key to simulate a 500 error in a PUT method (key=value)"
+      "displayName": "PUT Key Error response",
+      "description": "A Key and the value to simulate a 500 error in a PUT method (key=value)"
     },
 	{
       "name": "PUT_BODY_RESPONSE_500",
-      "displayName": "Body for response the 500 error (JSON)"
+      "displayName": "PUT body error response",
+      "description": "Body for response the 500 error (JSON)"
     },
 	{
       "name": "PUT_BODY_RESPONSE_OK",
-      "displayName": "Body for response OK (JSON)"
+      "displayName": "PUT Body response",
+      "description": "Body for response OK (JSON)"
     },
     {
       "name": "DELETE_API_PATH",
-      "displayName": "PATH for a DELETE method"
+      "displayName": "PATH DELETE",
+      "description": "The Path for a DELETE method"
     },
-	{
+    {
       "name": "DELETE_REQUIRED_KEYS",
-      "displayName": "Required Keys in a body for a DELETE method (comma separated)"
+      "displayName": "DELETE Required Keys",
+      "description": "Required Keys in a body for a DELETE method (comma separated)"
     },
 	{
       "name": "DELETE_KEY_RESPONSE_500",
-      "displayName": "A Key to simulate a 500 error in a DELETE method (key=value)"
+      "displayName": "DELETE Key Error response",
+      "description": "A Key and the value to simulate a 500 error in a DELETE method (key=value)"
     },
 	{
       "name": "DELETE_BODY_RESPONSE_500",
-      "displayName": "Body for response the 500 error (JSON)"
+      "displayName": "DELETE body error response",
+      "description": "Body for response the 500 error (JSON)"
     },
 	{
       "name": "DELETE_BODY_RESPONSE_OK",
-      "displayName": "Body for response OK (JSON)"
+      "displayName": "DELETE Body response",
+      "description": "Body for response OK (JSON)"
     },
     {
       "name": "NPM_MIRROR",
