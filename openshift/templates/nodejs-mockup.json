@@ -379,12 +379,12 @@
 	{
       "name": "POST_HTTP_CODE_RESPONSES_NOK",
       "displayName": "POST HTTP error response",
-      "description": "Value for the http error response(semicolon separated, related to "POST HTTP error response" Ex: 500;404)"
+      "description": "Value for the http error response(semicolon separated, related to \"POST HTTP error response\" Ex: 500;404)"
     },
 	{
       "name": "POST_BODY_RESPONSES_NOK",
       "displayName": "POST body error response",
-      "description": "Body for response error (JSON), (semicolon separated, related to "POST HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
+      "description": "Body for response error (JSON), (semicolon separated, related to \"POST HTTP error response\" Ex: {\"errorCode\":500, \"errorDesc\": \"this is an error\"}; ...)"
     },
 	{
       "name": "POST_BODY_RESPONSE_OK",
@@ -409,12 +409,12 @@
 	{
       "name": "GET_HTTP_CODE_RESPONSES_NOK",
       "displayName": "GET HTTP error response",
-      "description": "Value for the http error response (semicolon separated, related to "GET HTTP error response" Ex: 500;404)"
+      "description": "Value for the http error response (semicolon separated, related to \"GET HTTP error response\" Ex: 500;404)"
     },
 	{
       "name": "GET_BODY_RESPONSES_NOK",
       "displayName": "GET body error response",
-      "description": "Body for response error (JSON), semicolon separated, related to "GET HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
+      "description": "Body for response error (JSON), semicolon separated, related to \"GET HTTP error response\" Ex: {\"errorCode\":500, \"errorDesc\": \"this is an error\"}; ...)"
     },
 	{
       "name": "GET_BODY_RESPONSE_OK",
@@ -439,12 +439,12 @@
 	{
       "name": "PUT_HTTP_CODE_RESPONSES_NOK",
       "displayName": "PUT HTTP error response",
-      "description": "Value for the http error response (semicolon separated, related to "PUT HTTP error response" Ex: 500;404)"
+      "description": "Value for the http error response (semicolon separated, related to \"PUT HTTP error response\" Ex: 500;404)"
     },
 	{
       "name": "PUT_BODY_RESPONSES_NOK",
       "displayName": "PUT body error response",
-      "description": "Body for response error (JSON), semicolon separated, related to "PUT HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
+      "description": "Body for response error (JSON), semicolon separated, related to \"PUT HTTP error response\" Ex: {\"errorCode\":500, \"errorDesc\": \"this is an error\"}; ...)"
     },
 	{
       "name": "PUT_BODY_RESPONSE_OK",
@@ -469,12 +469,12 @@
 	{
       "name": "DELETE_HTTP_CODE_RESPONSES_NOK",
       "displayName": "POST HTTP error response",
-      "description": "Value for the http error response (semicolon separated, related to "DELETE HTTP error response" Ex: 500;404)"
+      "description": "Value for the http error response (semicolon separated, related to \"DELETE HTTP error response\" Ex: 500;404)"
     },
 	{
       "name": "DELETE_BODY_RESPONSES_NOK",
       "displayName": "DELETE body error response",
-      "description": "Body for response error (JSON), semicolon separated, related to "DELETE HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
+      "description": "Body for response error (JSON), semicolon separated, related to \"DELETE HTTP error response\" Ex: {\"errorCode\":500, \"errorDesc\": \"this is an error\"}; ...)"
     },
 	{
       "name": "DELETE_BODY_RESPONSE_OK",
