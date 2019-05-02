@@ -19,4 +19,7 @@ module.exports = (app) => {
 	if(DELETE_API_PATH != "")
     app.delete(DELETE_API_PATH, association.deleteByOperation);
 
+	app.use(function(req, res){
+       res.status(405).send({message: "Metodo no definido"});
+   });
 }
