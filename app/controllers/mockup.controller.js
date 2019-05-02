@@ -22,19 +22,19 @@ exports.create = (req, res) => {
 	var BODY_RESPONSES_NOK=process.env['POST_BODY_RESPONSES_NOK'].split(';');
 
 	for (let iteratorArr in KEY_RESPONSES_NOK_ARR)
-	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
@@ -94,19 +94,19 @@ var REQUIRED_KEYS=process.env['GET_REQUIRED_KEYS'];
 	var BODY_RESPONSES_NOK=process.env['GET_BODY_RESPONSES_NOK'].split(';');
 
 	for (let iteratorArr in KEY_RESPONSES_NOK_ARR)
-	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
@@ -166,19 +166,19 @@ var REQUIRED_KEYS=process.env['PUT_REQUIRED_KEYS'];
 	var BODY_RESPONSES_NOK=process.env['PUT_BODY_RESPONSES_NOK'].split(';');
 
 	for (let iteratorArr in KEY_RESPONSES_NOK_ARR)
-	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
@@ -238,19 +238,19 @@ var REQUIRED_KEYS=process.env['DELETE_REQUIRED_KEYS'];
 	var BODY_RESPONSES_NOK=process.env['DELETE_BODY_RESPONSES_NOK'].split(';');
 
 	for (let iteratorArr in KEY_RESPONSES_NOK_ARR)
-	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	if(req.body[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.params[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
 		
 	}
-	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, str.indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(str.indexOf('=') + 1))
+	else if (req.query[KEY_RESPONSES_NOK_ARR[iteratorArr].substring(0, KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('='))] == KEY_RESPONSES_NOK_ARR[iteratorArr].substring(KEY_RESPONSES_NOK_ARR[iteratorArr].indexOf('=') + 1))
 	{
 		res.status(parseInt(HTTP_CODE_RESPONSES_NOK[iteratorArr])).send(JSON.parse(BODY_RESPONSES_NOK[iteratorArr]))
 		return
