@@ -217,36 +217,36 @@
                     "value": "${DELETE_REQUIRED_KEYS}"
                   },
 				  {
-                    "name": "POST_KEY_RESPONSE_500",
-                    "value": "${POST_KEY_RESPONSE_500}"
+                    "name": "POST_KEY_RESPONSES_NOK",
+                    "value": "${POST_KEY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "GET_KEY_RESPONSE_500",
-                    "value": "${GET_KEY_RESPONSE_500}"
+                    "name": "GET_KEY_RESPONSES_NOK",
+                    "value": "${GET_KEY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "PUT_KEY_RESPONSE_500",
-                    "value": "${PUT_KEY_RESPONSE_500}"
+                    "name": "PUT_KEY_RESPONSES_NOK",
+                    "value": "${PUT_KEY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "DELETE_KEY_RESPONSE_500",
-                    "value": "${DELETE_KEY_RESPONSE_500}"
+                    "name": "DELETE_KEY_RESPONSES_NOK",
+                    "value": "${DELETE_KEY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "POST_BODY_RESPONSE_500",
-                    "value": "${POST_BODY_RESPONSE_500}"
+                    "name": "POST_BODY_RESPONSES_NOK",
+                    "value": "${POST_BODY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "GET_BODY_RESPONSE_500",
-                    "value": "${GET_BODY_RESPONSE_500}"
+                    "name": "GET_BODY_RESPONSES_NOK",
+                    "value": "${GET_BODY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "PUT_BODY_RESPONSE_500",
-                    "value": "${PUT_BODY_RESPONSE_500}"
+                    "name": "PUT_BODY_RESPONSES_NOK",
+                    "value": "${PUT_BODY_RESPONSES_NOK}"
                   },
 				  {
-                    "name": "DELETE_BODY_RESPONSE_500",
-                    "value": "${DELETE_BODY_RESPONSE_500}"
+                    "name": "DELETE_BODY_RESPONSES_NOK",
+                    "value": "${DELETE_BODY_RESPONSES_NOK}"
                   },
 				  {
                     "name": "POST_BODY_RESPONSE_OK",
@@ -263,7 +263,23 @@
 				  {
                     "name": "DELETE_BODY_RESPONSE_OK",
                     "value": "${DELETE_BODY_RESPONSE_OK}"
-                  }
+                  },
+				  {
+                    "name": "POST_HTTP_CODE_RESPONSES_NOK",
+                    "value": "${POST_HTTP_CODE_RESPONSES_NOK}"
+                  },
+				  {
+                    "name": "GET_HTTP_CODE_RESPONSES_NOK",
+                    "value": "${GET_HTTP_CODE_RESPONSES_NOK}"
+                  },
+				  {
+                    "name": "PUT_HTTP_CODE_RESPONSES_NOK",
+                    "value": "${PUT_HTTP_CODE_RESPONSES_NOK}"
+                  },
+				  {
+                    "name": "DELETE_HTTP_CODE_RESPONSES_NOK",
+                    "value": "${DELETE_HTTP_CODE_RESPONSES_NOK}"
+                  },
                 ],
                 "readinessProbe": {
                   "timeoutSeconds": 3,
@@ -353,17 +369,22 @@
     {
       "name": "POST_REQUIRED_KEYS",
       "displayName": "POST Required Keys",
-      "description": "Required Keys in a body for a POST method (comma separated)"
+      "description": "Required Keys in a body for a POST method (semicolon separated Ex: idCustomer;lineNumber)"
     },
 	{
-      "name": "POST_KEY_RESPONSE_500",
+      "name": "POST_KEY_RESPONSES_NOK",
       "displayName": "POST Key Error response",
-      "description": "A Key and the value to simulate a 500 error in a POST method (key=value)"
+      "description": "A Key and the value to an error in a POST method (semicolon separated Ex: idCustomer=123;idCustomer=333)"
     },
 	{
-      "name": "POST_BODY_RESPONSE_500",
+      "name": "POST_HTTP_CODE_RESPONSES_NOK",
+      "displayName": "POST HTTP error response",
+      "description": "Value for the http error response(semicolon separated, related to "POST HTTP error response" Ex: 500;404)"
+    },
+	{
+      "name": "POST_BODY_RESPONSES_NOK",
       "displayName": "POST body error response",
-      "description": "Body for response the 500 error (JSON)"
+      "description": "Body for response error (JSON), (semicolon separated, related to "POST HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
     },
 	{
       "name": "POST_BODY_RESPONSE_OK",
@@ -378,17 +399,22 @@
     {
       "name": "GET_REQUIRED_KEYS",
       "displayName": "GET Required Keys",
-      "description": "Required Keys in a body for a GET method (comma separated)"
+      "description": "Required Keys in a body for a GET method (semicolon separated Ex: idCustomer;lineNumber)"
     },
 	{
-      "name": "GET_KEY_RESPONSE_500",
+      "name": "GET_KEY_RESPONSES_NOK",
       "displayName": "GET Key Error response",
-      "description": "A Key and the value to simulate a 500 error in a GET method (key=value)"
+      "description": "A Key and the value to an error in a GET method (semicolon separated Ex: idCustomer=123;idCustomer=333))"
     },
 	{
-      "name": "GET_BODY_RESPONSE_500",
+      "name": "GET_HTTP_CODE_RESPONSES_NOK",
+      "displayName": "GET HTTP error response",
+      "description": "Value for the http error response (semicolon separated, related to "GET HTTP error response" Ex: 500;404)"
+    },
+	{
+      "name": "GET_BODY_RESPONSES_NOK",
       "displayName": "GET body error response",
-      "description": "Body for response the 500 error (JSON)"
+      "description": "Body for response error (JSON), semicolon separated, related to "GET HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
     },
 	{
       "name": "GET_BODY_RESPONSE_OK",
@@ -403,17 +429,22 @@
     {
       "name": "PUT_REQUIRED_KEYS",
       "displayName": "PUT Required Keys",
-      "description": "Required Keys in a body for a PUT method (comma separated)"
+      "description": "Required Keys in a body for a PUT method (semicolon separated Ex: idCustomer;lineNumber)"
     },
 	{
-      "name": "PUT_KEY_RESPONSE_500",
+      "name": "PUT_KEY_RESPONSES_NOK",
       "displayName": "PUT Key Error response",
-      "description": "A Key and the value to simulate a 500 error in a PUT method (key=value)"
+      "description": "A Key and the value to an error in a PUT method (semicolon separated Ex: idCustomer=123;idCustomer=333))"
     },
 	{
-      "name": "PUT_BODY_RESPONSE_500",
+      "name": "PUT_HTTP_CODE_RESPONSES_NOK",
+      "displayName": "PUT HTTP error response",
+      "description": "Value for the http error response (semicolon separated, related to "PUT HTTP error response" Ex: 500;404)"
+    },
+	{
+      "name": "PUT_BODY_RESPONSES_NOK",
       "displayName": "PUT body error response",
-      "description": "Body for response the 500 error (JSON)"
+      "description": "Body for response error (JSON), semicolon separated, related to "PUT HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
     },
 	{
       "name": "PUT_BODY_RESPONSE_OK",
@@ -428,17 +459,22 @@
     {
       "name": "DELETE_REQUIRED_KEYS",
       "displayName": "DELETE Required Keys",
-      "description": "Required Keys in a body for a DELETE method (comma separated)"
+      "description": "Required Keys in a body for a DELETE method (semicolon separated Ex: idCustomer;lineNumber)"
     },
 	{
-      "name": "DELETE_KEY_RESPONSE_500",
+      "name": "DELETE_KEY_RESPONSES_NOK",
       "displayName": "DELETE Key Error response",
-      "description": "A Key and the value to simulate a 500 error in a DELETE method (key=value)"
+      "description": "A Key and the value to an error in a DELETE method (semicolon separated Ex: idCustomer=123;idCustomer=333)"
     },
 	{
-      "name": "DELETE_BODY_RESPONSE_500",
+      "name": "DELETE_HTTP_CODE_RESPONSES_NOK",
+      "displayName": "POST HTTP error response",
+      "description": "Value for the http error response (semicolon separated, related to "DELETE HTTP error response" Ex: 500;404)"
+    },
+	{
+      "name": "DELETE_BODY_RESPONSES_NOK",
       "displayName": "DELETE body error response",
-      "description": "Body for response the 500 error (JSON)"
+      "description": "Body for response error (JSON), semicolon separated, related to "DELETE HTTP error response" Ex: {"errorCode":500, "errorDesc": "this is an error}; ...)"
     },
 	{
       "name": "DELETE_BODY_RESPONSE_OK",
