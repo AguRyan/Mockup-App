@@ -14,11 +14,12 @@ module.exports = (app) => {
 	{
 		var GET_API_PATH_ARR=GET_API_PATH.split(';');
 	
-		for (let getApiPath in GET_API_PATH_ARR)
-		{	
-			app.get(getApiPath, association.findOne);
-		}
-		
+		if(GET_API_PATH_ARR.length > 1)
+			app.get(GET_API_PATH_ARR[0], association.findOne);
+			app.get(GET_API_PATH_ARR[1], association.findOne);
+		else
+			app.get(GET_API_PATH_ARR[0], association.findOne);
+
 	}
 
 	if(PUT_API_PATH != "")
