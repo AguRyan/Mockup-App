@@ -11,7 +11,15 @@ module.exports = (app) => {
     app.post(POST_API_PATH, association.create);
 
 	if(GET_API_PATH != "")
-    app.get(GET_API_PATH, association.findOne);
+	{
+		var GET_API_PATH_ARR=GET_API_PATH.split(';');
+	
+		for (let getApiPath in GET_API_PATH_ARR)
+		{	
+			app.get(getApiPath, association.findOne);
+		}
+		
+	}
 
 	if(PUT_API_PATH != "")
     app.put(PUT_API_PATH, association.update);
